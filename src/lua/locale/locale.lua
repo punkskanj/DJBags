@@ -1,0 +1,3 @@
+local NAME, ADDON = ...
+
+-- TODO set locale using the locale function
