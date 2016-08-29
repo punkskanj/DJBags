@@ -1,0 +1,54 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+    <Frame name="DJBagsBagBarTemplate" virtual="true" movable="true" enableMouse="true">
+        <Size x="173" y="47" />
+        <Backdrop bgFile="Interface\ChatFrame\ChatFrameBackground" edgeFile="Interface\Buttons\WHITE8x8">
+            <EdgeSize>
+                <AbsValue val="1" />
+            </EdgeSize>
+            <Color r="0" g="0" b="0" a="0.6" />
+            <BorderColor r="0.3" g="0.3" b="0.3" a="1" />
+        </Backdrop>
+        <Frames>
+            <Button name="$parentBag1" parentKey="bag1" inherits="ItemButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="5" y="-5" />
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        DJBagsBagItemLoad(self, 1, ContainerIDToInventoryID(1))
+                    </OnLoad>
+                </Scripts>
+            </Button>
+            <Button name="$parentBag2" parentKey="bag2" inherits="ItemButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentBag1" relativePoint="TOPRIGHT" x="5" />
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        DJBagsBagItemLoad(self, 2, ContainerIDToInventoryID(2))
+                    </OnLoad>
+                </Scripts>
+            </Button>
+            <Button name="$parentBag3" parentKey="bag3" inherits="ItemButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentBag2" relativePoint="TOPRIGHT" x="5" />
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        DJBagsBagItemLoad(self, 3, ContainerIDToInventoryID(3))
+                    </OnLoad>
+                </Scripts>
+            </Button>
+            <Button name="$parentBag4" parentKey="bag4" inherits="ItemButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentBag3" relativePoint="TOPRIGHT" x="5" />
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        DJBagsBagItemLoad(self, 4, ContainerIDToInventoryID(4))
+                    </OnLoad>
+                </Scripts>
+            </Button>
+        </Frames>
+    </Frame>
+</Ui>

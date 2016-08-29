@@ -4,5 +4,7 @@
 ## Title: DJBags
 ## Version: 0.7.0
 ## OptionalDeps: Masque
+## SavedVariables: DJBagsBagSettings
+## SavedVariablesPerCharacter: DJBagsNewItems
 
 src/manifest.xml

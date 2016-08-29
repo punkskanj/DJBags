@@ -1,0 +1,8 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/  http://wowprogramming.com/FrameXML/UI.xsd">
+    <!-- FormatFactory -->
+    <Script file="src/lua/format/formatFactory.lua" />
+
+    <!-- Formats -->
+    <Script file="src/lua/format/formats/oneBag.lua" />
+    <Script file="src/lua/format/formats/masonry.lua" />
+</Ui>
