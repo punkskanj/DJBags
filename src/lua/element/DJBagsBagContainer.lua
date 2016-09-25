@@ -34,6 +34,14 @@ function DJBagsBagContainer_OnHide(self)
     ADDON.events:Remove('DJBAGS_BAG_HOVER', bag)
 end
 
+function DJBagsBagContainer_SortBag(self)
+    PlaySound("UI_BagSorting_01");
+    ADDON.events:Remove('BAG_UPDATE', self)
+    SortBags()
+    ADDON:UpdateBag(DJBagsBagContainer)
+    ADDON.events:Add('BAG_UPDATE', self)
+end
+
 function DJBagsMainBar_OnClearNewItems(self)
     C_NewItems:ClearAll()
     DJBagsNewItems = {}

@@ -41,8 +41,7 @@
                         GameTooltip:Hide()
                     </OnLeave>
                     <OnClick>
-                        PlaySound("UI_BagSorting_01");
-                        SortBags()
+                        DJBagsBagContainer_SortBag()
                     </OnClick>
                 </Scripts>
             </Button>

@@ -63,7 +63,11 @@ end
 
 SLASH_DJBAGS1, SLASH_DJBAGS2, SLASH_DJBAGS3, SLASH_DJBAGS4 = '/djb', '/dj', '/djbags', '/db';
 function SlashCmdList.DJBAGS(msg, editbox)
-    DJBagsBagContainer:Show()
+    for k,v in pairs(_G) do
+        if string.match(tostring(v), 'Artifact Power') then
+            print(k, v)
+        end
+    end
 end
 
 SLASH_RL1 = '/rl';

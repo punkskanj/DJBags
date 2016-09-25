@@ -139,6 +139,10 @@ function ADDON:GetItemContainerTitle(item)
             return NEW
         end
 
+        if DJBagsTooltip:IsItemArtifactPower(bag, slot) then
+            return ARTIFACT_POWER
+        end
+
         return item.class
     end
     return EMPTY

@@ -157,7 +157,7 @@ function item:Update()
     self.hasItem = nil
 
     if isEquipment then
-        level = DJBagsTooltip:GetItemLevel(link) or level
+        level = DJBagsTooltip:GetItemLevel(self:GetParent():GetID(), self:GetID()) or level
     elseif classId == LE_ITEM_CLASS_CONTAINER then
         -- TODO set count to number of slots
     end
